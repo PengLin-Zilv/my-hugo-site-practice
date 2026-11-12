@@ -5,6 +5,7 @@
   <title>{{ .Site.Title }}</title>
 </head>
 <body>
+  <nav>{{ range site.RegularPages }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ end }}</nav>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 </body>
