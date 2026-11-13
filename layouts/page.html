@@ -5,7 +5,7 @@
   <title>{{ .Title }} | {{ .Site.Title }}</title>
 </head>
 <body>
-  <p><a href="{{ "/" | relURL }}">Home</a></p>
+  <p><a href="{{ site.Home.RelPermalink }}">Home</a></p>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 </body>
